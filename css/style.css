@@ -78,9 +78,6 @@ h1 {
     padding: 5px; }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column; } }
-@media (max-width: 768px) {
   .resizeimage {
     background-image: url("https://vfs.cloud9.us-east-1.amazonaws.com/vfs/5f0c3ff3f7de433e886c301fbb2e7622/preview/responsible/images/top250.jpg");
     height: 250px;

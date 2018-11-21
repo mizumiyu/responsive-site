@@ -116,12 +116,6 @@ h1 {
     }
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-}
-
 //mobile
 @media (max-width: 768px) {
     .resizeimage {
