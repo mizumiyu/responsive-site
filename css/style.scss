@@ -1,0 +1,141 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+// font-family
+$baseFontFamily :"游ゴシック",
+YuGothic,
+"メイリオ",
+Verdana,
+"Hiragino Kaku Gothic ProN",
+Meiryo,
+sans-serif;
+
+// colors
+$baseColor: #f7f7f2;
+$subColor: #c5d86d;
+$keyColor: #f05d23;
+$fontColor: #260C1A;
+
+/* Base
+------------------------------------------------------------*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: $fontColor;
+    font-size: 1.4rem;
+    font-family: $baseFontFamily;
+    letter-spacing: 0.1em;
+    background-color: $baseColor;
+}
+
+/* Align
+------------------------------------------------------------*/
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Font
+------------------------------------------------------------*/
+
+.abel {
+    font-family: 'Abel', sans-serif;
+}
+
+
+/* Contents
+------------------------------------------------------------*/
+
+h1 {
+    text-align: center;
+}
+
+#contents .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contents .box_contents {
+    border: solid 0;
+    margin: 20px;
+    flex: 1;
+    background-color: $keyColor;
+
+    text-align: center;
+
+h2 {
+        background-color: $subColor;
+        margin: 0;
+    }
+
+    p {
+        color: $baseColor;
+    }
+}
+
+
+#bottom .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_bottom {
+    border: solid 0;
+    flex: 1;
+    background-color: $subColor;
+    margin: 50px, 0, 0, 0;
+    padding: 0px;
+}
+
+.box_button {
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $keyColor;
+    width: 200px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    color: $baseColor;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+//mobile
+@media (max-width: 768px) {
+    p.resizeimage img {
+        height: 250px;
+    }
+
+    .image {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+// PC
+@media (min-width: 769px) {
+    
+    p.resizeimage img {
+        max-width :1200px;
+    }
+
+    #contents {
+        .container {
+            @include flex-direction(row);
+            justify-content: space-between;
+        }
+    }
+
+}
