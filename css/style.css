@@ -25,23 +25,31 @@ body {
 /* Contents
 ------------------------------------------------------------*/
 h1 {
-  text-align: center; }
+  text-align: center;
+  margin: 30px 0 15px 0;
+  font-size: 2rem; }
 
 #contents .container {
   display: flex;
   justify-content: space-between; }
 
-#contents .box_contents {
+#contents
+.box_contents {
   border: solid 0;
-  margin: 20px;
+  margin: 15px;
   flex: 1;
   background-color: #f05d23;
   text-align: center; }
-  #contents .box_contents h2 {
+  #contents
+  .box_contents h2 {
     background-color: #c5d86d;
-    margin: 0; }
-  #contents .box_contents p {
-    color: #f7f7f2; }
+    padding: 10px;
+    font-size: 1.5rem; }
+  #contents
+  .box_contents p {
+    color: #f7f7f2;
+    padding: 10px;
+    font-size: 1.5rem; }
 
 #bottom .container {
   display: flex;
@@ -51,8 +59,10 @@ h1 {
   border: solid 0;
   flex: 1;
   background-color: #c5d86d;
-  margin: 50px, 0, 0, 0;
-  padding: 0px; }
+  margin: 0;
+  padding: 20px; }
+  .box_bottom h3 {
+    padding: 10px; }
 
 .box_button {
   flex: 1;
@@ -64,13 +74,19 @@ h1 {
   align-items: center;
   text-align: center;
   color: #f7f7f2; }
+  .box_button p {
+    padding: 5px; }
 
 @media (max-width: 768px) {
   .container {
     flex-direction: column; } }
 @media (max-width: 768px) {
-  p.resizeimage img {
-    height: 250px; }
+  .resizeimage {
+    background-image: url("https://vfs.cloud9.us-east-1.amazonaws.com/vfs/5f0c3ff3f7de433e886c301fbb2e7622/preview/responsible/images/top250.jpg");
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center; }
 
   .image {
     flex-direction: column;
@@ -79,8 +95,12 @@ h1 {
   .container {
     flex-direction: column; } }
 @media (min-width: 769px) {
-  p.resizeimage img {
-    max-width: 1200px; }
+  .resizeimage {
+    background-image: url("https://vfs.cloud9.us-east-1.amazonaws.com/vfs/5f0c3ff3f7de433e886c301fbb2e7622/preview/responsible/images/top.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center; }
 
   #contents .container {
     -webkit-flex-direction: row;
